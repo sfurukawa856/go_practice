@@ -1,18 +1,17 @@
 package main
 
 import (
-	// importする順番をアルファベット順にすると読みやすいかも
 	"fmt"
-	"os/user"
-	"time"
 )
 
 func main() {
-	a := [1][2]string{{"foo", "bar"}}
-	a[0][0] = "furukawa"
-
-	fmt.Println(a)
-	fmt.Println(time.Now())
-	fmt.Println(user.Current())
-
+	// 変数宣言一括
+	var (
+		i      int     = 0
+		num    float64 = 100
+		str    string  = "test"
+		tr, fl bool    = true, false
+	)
+	// 出力一括
+	fmt.Println(i, num, str, tr, fl)
 }
